@@ -31,7 +31,7 @@ export default class CurrencyExchange {
 				if (exchangeRateData.result !== 'success') {
 					throw new Error(`Error converting currency: ${exchangeRateData.result}`);
 				}
-				const conversionRates = exchangeRateData.conversion_rates;
+				// const conversionRates = exchangeRateData.conversion_rates;
 				if ((newCurrency !== exchangeRateData.target_code)) {
 					throw new Error(`Conversion rate for ${newCurrency} not found.`);
 				}
