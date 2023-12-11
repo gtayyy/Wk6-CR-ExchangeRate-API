@@ -14,7 +14,7 @@ const convertCurrency = async () => {
     };
   };
 
-  const validateAmount = (amount) => {
+	const validateAmount = (amount) => {
     if (isNaN(amount) || amount <= 0) {
       alert('Please enter a valid amount to convert.');
       return false;
